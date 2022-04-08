@@ -1,18 +1,18 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'quant_nbody: A Python package for exact diagonalization of many-body quantum chemistry and physics hamiltonians'
 tags:
   - Python
   - quantum physics and chemistry
   - quantum many-body systems
   - exact diagonalization
 authors:
-  - name: Yalouz S. #^[Co-first author] # note this makes a footnote saying 'Co-first author'
-    orcid: 0000-0000-0000-0000
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID^[Co-first author] # note this makes a footnote saying 'Co-first author'
-    affiliation: 2
-  - name: Author with no affiliation^[Corresponding author]
-    affiliation: 3
+  - name: Yalouz S.^[Corresponding author] #^[Co-first author] # note this makes a footnote saying 'Co-first author'
+    orcid: 0000-0002-8818-3379
+    affiliation: 1 # (Multiple affiliations must be quoted)
+  - name:  Martin Rafael Gullin # note this makes a footnote saying 'Co-first author'
+    affiliation: 1
+  - name: Sajanthan Sekaran
+    affiliation: 1
 affiliations:
  - name: Laboratoire de Chimie Quantique, 4 rue Balise Pascal, 67000 Strasbourg, France
    index: 1 
