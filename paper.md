@@ -48,7 +48,7 @@ The framework of the package stand on two fundamental steps :
 - The creation of the matrix representation of a general particle number preserving operator $a^\dagger a$.
 
 Once these two ingredients have been created, the user can provide the so-called general $a^\dagger a$
-operator to already-built functions in order to built quantum Hamiltonian of his\her choice. The user can also 
+operator to already-built functions in order to built quantum Hamiltonian of his/her choice. The user can also 
 use this same operator to build his/her own objects.
 
 One of the most emblematic Hamiltonian already built is the electronic structure Hamiltonian from quantum chemistry
