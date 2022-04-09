@@ -21,6 +21,3 @@ jobs:
           # PDF. Note, this should be the same directory as the input
           # paper.md
           path: paper.pdf
-
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
