@@ -1,12 +1,13 @@
 ---
-title: 'quant_nbody: A Python package for exact diagonalization of many-body quantum chemistry and physics hamiltonians'
+Title:
+'Quant_N_Body : an exact diagonalization python package for quantum chemistry and many-body Hamiltonians'
 tags:
   - Python
   - quantum physics and chemistry
   - quantum many-body systems
   - exact diagonalization
 authors:
-  - name: Yalouz S.^[Corresponding author] #^[Co-first author] # note this makes a footnote saying 'Co-first author'
+  - name: Yalouz S.^[yalouzsaad@gmail.com] #^[Co-first author] # note this makes a footnote saying 'Co-first author'
     orcid: 0000-0002-8818-3379
     affiliation: 1 # (Multiple affiliations must be quoted)
   - name:  Martin Rafael Gullin # note this makes a footnote saying 'Co-first author'
@@ -17,7 +18,7 @@ affiliations:
  - name: Laboratoire de Chimie Quantique, 4 rue Balise Pascal, 67000 Strasbourg, France
    index: 1 
 date: 13 August 2017
-#bibliography: paper.bib
+bibliography: paper.bib
 
 # Optional fields if submitting to a AAS journal too, see this blog post:
 # https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
@@ -25,17 +26,34 @@ date: 13 August 2017
 #aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
-# Summary
+# Summary 
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
+This Python package provides numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native operators implemented and is flexible enough to help users in building new types of operators. 
+
+
+# Statement of need
+
+Exact diagonalization method is an important tool to get access to exact properties
+of either ab initio or model quantum many-body systems. In practice, it requires to
+develop a code that can encode a matrix representation of quantum
+operators (e.g. the Hamiltonian of a system) in a given quantum many-body basis.
+Usually in numerical packages, this practical aspect is kept as a “blackbox” (e.g. hidden
+inside the code) to spare the user with these cumbersome numerical parts. This practice is
+particularly suitable for realizing application however, it turns out to be problematic
+for researchers in need of numerical tools to develop and test new methodologies and theories. 
+
+
+
+The Python package “QuantNBody” has been developed to help theoreticians in quantum chemistry and physics who need a quick and easy way to numerically create and manipulate objects linked to quantum many-body systems. All of its framework is based on the creation of matrix representation of quantum operators in a given many-body basis. 
+
+The framework of the package is focus on two fundamental steps which are :
+
+- Creating a many-body basis
+
+ the particle number preserving operator 
+
+$ a^\dagger a $
+
 
 # Statement of need
 
@@ -57,7 +75,7 @@ used in graduate courses on Galactic dynamics to, e.g., provide interactive
 visualizations of textbook material . The combination of speed,
 design, and support for Astropy functionality in `Gala` will enable exciting
 scientific explorations of forthcoming data releases from the *Gaia* mission
-  by students and experts alike.
+by students and experts alike.
 
 # Mathematics
 
@@ -102,4 +120,4 @@ Figures can be included like this:
 # Acknowledgements
 
 
-# References
+# References­
