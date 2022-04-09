@@ -51,15 +51,10 @@ Once these two ingredients have been created, the user can provide the so-called
 operator to already-built functions in order to built quantum Hamiltonian of his\her choice. The user can also 
 use this same operator to build his/her own objects.
 
-Examples of already built many-body Hamiltonians are the electronic structure Hamiltonian
+One of the most emblematic Hamiltonian already built is the electronic structure Hamiltonian from quantum chemistry
 \begin{equation} 
-\hat{H} = \sum_{p,q} h_{pq} \sum_{\sigma}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
+\hat{H} = \sum_{p,q} h_{pq} \sum_\sigma^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
 + \sum_{p,q,r,s}  g_{pqrs} \sum_{\sigma,\tau}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a^\dagger_{r,\tau} a_{s,\tau} a_{q,\sigma}
 \end{equation}
-
-and the Fermi-Hubbard Hamiltonian 
-\begin{equation} 
-\hat{H} = \sum_{p,q} h_{pq} \sum_{\sigma}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
-+ \sum_{p,q,r,s}  g_{pqrs} \sum_{\sigma,\tau}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a^\dagger_{r,\tau} a^\dagger_{s,\tau} a_{q,\sigma}
-\end{equation}
+where $h_{pq}$ and $g_{pqrs}$ are the so-called one- and two-electron integrals.
 
