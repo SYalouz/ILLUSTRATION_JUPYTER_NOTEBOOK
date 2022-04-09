@@ -47,7 +47,7 @@ The framework of the package stand on two fundamental steps :
 - Creating a reference many-body basis (based on a total number of quantum particles and modes/orbitals to fill).
 - The creation of the matrix representation of a general particle number preserving operator $a^\dagger a$.
 
-Once these two ingredients have been created, the user can provide the so-called general '$a^\daggger a$'
+Once these two ingredients have been created, the user can provide the so-called general $a^\daggger a$
 operator to already-built functions in order to built quantum Hamiltonian of his\her choice. The user can also 
 use this same operator to build his/her own objects.
 
