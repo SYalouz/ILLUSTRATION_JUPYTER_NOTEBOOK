@@ -24,7 +24,6 @@ bibliography: paper.bib
 
 This Python package provides numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native operators implemented and is flexible enough to help users in building new types of operators. 
 
-
 # Statement of need
 
 Exact diagonalization method is an important tool to get access to exact properties
