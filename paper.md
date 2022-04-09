@@ -29,27 +29,40 @@ aas-journal: Astrophysical Journal <- The name of the AAS journal.
 # Summary   
 
 
-This Python package provides numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native operators implemented and is flexible enough to help users in building new types of operators. 
+'QuantNBody' is a Python package providing numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native operators implemented and is flexible enough to help users in building new types of operators. 
 
 # Statement of need
 
-Exact diagonalization method is an important tool to get access to exact properties
+The so-called exact diagonalization method is an important tool to get access to exact properties
 of either ab initio or model quantum many-body systems. In practice, it requires to
 develop a code that can encode a matrix representation of quantum
 operators (e.g. the Hamiltonian of a system) in a given quantum many-body basis.
-Usually in numerical packages, this practical aspect is kept as a “blackbox” (e.g. hidden
-inside the code) to spare the user with these cumbersome numerical parts. This practice is
-particularly suitable for realizing application however, it turns out to be problematic
+Usually this practical aspect is kept as a blackbox in packages (e.g. hidden
+inside the code) to spare the user with these cumbersome numerical parts especially when the target 
+user seek for applciations. However, this turns out to be problematic
 for researchers in need of numerical tools to develop and test new methodologies and theories. 
 
 
+The Python package 'QuantNBody' has been developed to help theoreticians in quantum chemistry and physics
+who need a quick and easy way to numerically create and manipulate objects linked to many-fermion systems.
+All of its framework is based on the creation of numerical matrix representation of quantum operators
+in a given many-body basis. 
 
-The Python package 'QuantNBody' has been developed to help theoreticians in quantum chemistry and physics who need a quick and easy way to numerically create and manipulate objects linked to quantum many-body systems. All of its framework is based on the creation of matrix representation of quantum operators in a given many-body basis. 
+The framework of the package is focused on two fundamental steps which are :
 
-The framework of the package is focus on two fundamental steps which are :
+- The creation of a many-fermion basis (based on a total number of fermion and orbitals).
+- The creation of the matrix representation of a general particle-number preserving hopping operator $a^\dagger a$.
 
-Creating a many-body basis
+The electronic structure Hamiltonian
 
-the particle number preserving operator 
+\begin{equation} 
+\hat{H} = \sum_{p,q} h_{pq} \sum_{\sigma}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
++ \sum_{p,q,r,s}  g_{pqrs} \sum_{\sigma,\tau}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a^\dagger_{r,\tau} a^\dagger_{s,\tau} a_{q,\sigma}
+\end{equation}
 
-$ a^\dagger a $
+and the Fermi-Hubbard Hamiltonian 
+\begin{equation} 
+\hat{H} = \sum_{p,q} h_{pq} \sum_{\sigma}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
++ \sum_{p,q,r,s}  g_{pqrs} \sum_{\sigma,\tau}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a^\dagger_{r,\tau} a^\dagger_{s,\tau} a_{q,\sigma}
+\end{equation}
+
