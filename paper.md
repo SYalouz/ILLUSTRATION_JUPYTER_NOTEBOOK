@@ -1,6 +1,5 @@
 ---
-Title:
-'Quant_N_Body: an exact diagonalization python package for quantum chemistry and many-body Hamiltonians'
+Title: 'QuantNBody: an exact diagonalization python package for quantum chemistry and many-body Hamiltonians'
 tags:
   - Python
   - quantum physics and chemistry
