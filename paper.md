@@ -1,26 +1,21 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'QuantNBody: an exact diagonalization python package for quantum chemistry and many-body Hamiltonians'
 tags:
   - Python
-  - astronomy
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - quantum physics and chemistry
+  - quantum many-body systems
+  - exact diagonalization
 authors:
-  - name: Adrian M. Price-Whelan^[Co-first author] # note this makes a footnote saying 'Co-first author'
-    orcid: 0000-0000-0000-0000
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID^[Co-first author] # note this makes a footnote saying 'Co-first author'
-    affiliation: 2
-  - name: Author with no affiliation^[Corresponding author]
-    affiliation: 3
+  - name: Saad Yalouz^[yalouzsaad@gmail.com]
+    orcid: 0000-0002-8818-3379
+    affiliation: 1  # (Multiple affiliations must be quoted)
+  - name: Martin Rafael Gullin # note this makes a footnote saying 'Co-first author'
+    affiliation: 1
+  - name: Sajanthan Sekaran
+    affiliation: 1
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University, USA
+ - name: Laboratoire de Chimie Quantique, 4 rue Balise Pascal, 67000 Strasbourg, France
    index: 1
- - name: Institution Name, Country
-   index: 2
- - name: Independent Researcher, Country
-   index: 3
 date: 13 August 2017
 bibliography: paper.bib
 
