@@ -23,14 +23,13 @@ bibliography: paper.bib
 
 # Summary
 
-'QuantNBody' is a Python package providing numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native operators implemented and is flexible enough to help users in building new types of operators. 
+'QuantNBody' is a Python package providing numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native functions implemented and is flexible enough to help users in building new types of many-body operators or objects. 
 
 # Statement of need
   
-Building exact representation of many-body operators can give exact to exact properties of either
-ab initio or model systems in quantum chemistry and physics.
-In practice, it requires to
-develop a code that can encode a sparse matrix representation of quantum
+Encoding numerically a quantum many-body system is an important step to get access to exact properties 
+of either ab initio or model systems in quantum chemistry and physics.
+In practice, it requires to develop a code that can build a sparse matrix representation of quantum
 operators (e.g. the Hamiltonian of a system) in a given quantum many-body basis.
 Usually this aspect is kept as a blackbox in packages (e.g. hidden
 inside the code) to spare the user with the cumbersome numerical parts especially for applications.
