@@ -23,13 +23,13 @@ bibliography: paper.bib
 
 # Summary
 
-'QuantNBody' is a Python package providing numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native functions implemented and is flexible enough to help users in building new types of many-body operators or objects. 
+'QuantNBody' is a Python package providing numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native functions and is flexible enough to help users in building new types of many-body operators or objects. 
 
 # Statement of need
   
 Encoding numerically a quantum many-body system is an important step to get access to exact properties 
 of either ab initio or model systems in quantum chemistry and physics.
-In practice, it requires to develop a code that can build a sparse matrix representation of quantum
+In practice, it requires to develop a code that builds sparse matrix representations of quantum
 operators (e.g. the Hamiltonian of a system) in a given quantum many-body basis.
 Usually this aspect is kept as a blackbox in packages (e.g. hidden
 inside the code) to spare the user with the cumbersome numerical parts especially for applications.
@@ -45,17 +45,24 @@ planned to include bosonic systems).
 The framework of the 'QuantNBody' package stand on two fundamental steps :
 
 - Creating a reference many-body basis (based on a total number of quantum particles and modes/orbitals to fill).
-- Creating a matrix representation of a general object operator called $a^\dagger a$.
+- Creating the matrix representation of a general object called $a^\dagger a$ that encodes the jopping between different modes/orbital.
 
 Once these two ingredients have been created, the user can provide the so-called general $a^\dagger a$
-operator to already-built functions in order to built quantum Hamiltonian of his/her choice. The user can also 
-use this same operator to build his/her own objects.
+operator to already-built functions in order to generate quantum Hamiltonians of his/her choice. The user can also 
+use this same general operator to build his/her own objects.
 
-One of the most emblematic operators which is already built in the 'QuantNBody' package is the ab initio electronic structure Hamiltonian from quantum chemistry which reads
+One of the most emblematic operators in Quantum Chemistry and condensed matter theory which are already built in the 'QuantNBody' package are the ab initio electronic structure Hamiltonian  
 \begin{equation} 
 \hat{H} = \sum_{p,q} h_{pq} \sum_\sigma^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
 + \sum_{p,q,r,s}  g_{pqrs} \sum_{\sigma,\tau}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a^\dagger_{r,\tau} a_{s,\tau} a_{q,\sigma} + E_{nuc}
 \end{equation}
+
+and the Fermi-hubbard 
+\begin{equation} 
+\hat{H} = \sum_{p,q} h_{pq} \sum_\sigma^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
++ \sum_{i} U \hat{n}_{i,\uparrow} \hat{n}_{i,\downarrow}
+\end{equation}
+
 In practice, the QuantNBody package manages on its own the building of all the one- and two-body fermionic operators (i.e. the operators $a^\dagger_{p,\sigma} a_{q,\sigma}$ and $a^\dagger_{p,\sigma} a^\dagger_{r,\tau} a_{s,\tau} a_{q,\sigma}$) via the already built object $a^\dagger a$. The one-/two-electron integrals and nuclear repulsion (i.e. $h_{pq}$, $g_{pqrs}$ and $E_{nuc}$) however have to be obtained (very easily) from external chemistry python packages like PySCF or Psi4. Once these parameters are provided to QuantNBody, one can (i) build the Hamiltonian entierly (or in an reduced active-space representation) and diagonalize it (ii) check the many-body decomposition of the resulting eigenstates $|\Psi_k\rangle$ which are solution of the Shcrodinger equation $\hat{H}|\Psi_k\rangle = E_k |\Psi_k\rangle$, (iii) Build spin operators $S^2$ (or $S_z$, $S_x$ and $S_y$) to check the spin properties of the resulting states.
  
 
