@@ -67,6 +67,6 @@ and the second one is the Fermi-hubbard Hamiltonian from condensed matter theory
 
 The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters of directly obtained (very easily) from external chemistry python packages like PySCF or Psi4. Once these elements are provided to the QuantNBody package, one can (i) build the Hamiltonians entierly (or in an reduced active-space representation) and diagonalize them (ii) check the many-body decomposition of the resulting eigenstates $|\Psi_k\rangle$ which are solution of the Shcrodinger equation $\hat{H}|\Psi_k\rangle = E_k |\Psi_k\rangle$, (iii) Build spin operators $S^2$ (or $S_z$, $S_x$ and $S_y$) to check the spin properties of the resulting states.
 
-As an illustration, we show in figure several illustrative results one can produce with natives functions from the package. On the left, some properties of the groundstate of the $H_2$ molecule. On the right similar properties but for the groundstate of a 4 electron on 4 sites Hubbard model. 
+As an illustration, we show in figure several illustrative results one can produce with natives functions from the package. On the left, some properties of the groundstate of the $H_2$ molecule. On the right similar properties but for the groundstate of a 4 electrons on 4 sites Hubbard model. 
  
 
