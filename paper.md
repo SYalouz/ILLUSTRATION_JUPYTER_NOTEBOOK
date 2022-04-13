@@ -72,3 +72,11 @@ The package QuantNBody is currently being used in a number of scientific project
 the developement of new methodologies to study strongly correlated systems in quantum chemistry and
 condensed matter.
  
+ 
+ # Acknowledgements
+
+Saad Yalouz acknowledges support from the Netherlands Organization for Scientific Research (NWO/OCW), and the Interdisciplinary Thematic Institute ITI-CSC
+via the IdEx Unistra (ANR-10-IDEX-0002) within the program Investissement d’Avenir.
+
+# References
+
