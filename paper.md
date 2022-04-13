@@ -14,7 +14,7 @@ authors:
   - name: Sajanthan Sekaran
     affiliation: 1
 affiliations:
- - name: Laboratoire de Chimie Quantique, 4 rue Balise Pascal, 67000 Strasbourg, France
+ - name: Laboratoire de Chimie Quantique, 4 rue Blaise Pascal, 67000 Strasbourg, France
    index: 1
 date: 11 March 2022
 bibliography: paper.bib
