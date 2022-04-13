@@ -57,14 +57,16 @@ A few native many-body operators are already implemented in the QuantNBody packa
 electronic structure Hamiltonian from quantum chemistry
 \begin{equation} 
 \hat{H} = \sum_{p,q} h_{pq} \sum_\sigma^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
-+ \sum_{p,q,r,s}  g_{pqrs} \sum_{\sigma,\tau}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a^\dagger_{r,\tau} a_{s,\tau} a_{q,\sigma}  
++ \frac{1}{2} \sum_{p,q,r,s}  g_{pqrs} \sum_{\sigma,\tau}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a^\dagger_{r,\tau} a_{s,\tau} a_{q,\sigma}  
 \end{equation}
 
 or the Fermi-hubbard Hamiltonian from condensed matter theory
 \begin{equation} 
 \hat{H} = -t  \sum_{i,j} \sum_\sigma^{\uparrow,\downarrow} a^\dagger_{i,\sigma} a_{j,\sigma} 
-+ U \sum_{i}  \hat{n}_{i,\uparrow} \hat{n}_{i,\downarrow}
++ U \sum_{i}  a^\dagger_{i,\uparrow}a_{i,\uparrow} a^\dagger_{i,\downarrow} a_{i,\downarrow}
 \end{equation}
+
+where $ a^\dagger_{i,\sigma} / a_{i,\sigma}$ the are the fermionic creation/annihilation operators (in the spinorbital $i$ with spin $\sigma$).
 
 The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters of directly obtained (very easily) from external chemistry python packages like PySCF [@sun2020recent] or Psi4 [@turney2012psi4]. As an illustration, we show in figure 1 a few results one can produce with the package with both types of hamiltonians.
  
