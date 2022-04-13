@@ -64,7 +64,11 @@ or the Fermi-hubbard Hamiltonian from condensed matter theory
 + \sum_{i} U \hat{n}_{i,\uparrow} \hat{n}_{i,\downarrow}
 \end{equation}
 
-The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters of directly obtained (very easily) from external chemistry python packages like PySCF or Psi4. As an illustration, we show in figure several illustrative results one can produce with the package.
+The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters of directly obtained (very easily) from external chemistry python packages like PySCF [@sun2020recent] or Psi4 [@turney2012psi4]. As an illustration, we show in figure several illustrative results one can produce with the package.
  
- ![Ground state properties of a $H_2$ molecule and a Fermi-Hubbard dimer. Left column : results obtained for a minimal basis STO-3G. On the right similar properties but for the groundstate of 2 electrons on 2 sites Fermi-Hubbard model. \label{fig:example}](figure.png)
+![Ground state properties of a $H_2$ molecule and a Fermi-Hubbard dimer. Left column : results obtained for a minimal basis STO-3G. On the right similar properties but for the groundstate of 2 electrons on 2 sites Fermi-Hubbard model. \label{fig:example}](figure.png)
 
+The package QuantNBody is currently being used in a number of scientific projects dedicated to
+the developement of new methodologies to study strongly correlated systems in quantum chemistry and
+condensed matter.
+ 
