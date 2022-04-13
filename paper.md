@@ -66,7 +66,7 @@ or the Fermi-hubbard Hamiltonian from condensed matter theory
 
 The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters of directly obtained (very easily) from external chemistry python packages like PySCF [@sun2020recent] or Psi4 [@turney2012psi4]. As an illustration, we show in figure 1 several illustrative results one can produce with the package.
  
-![$H_2$ molecule and Fermi-Hubbard dimer. Left column : ground state energy and ground state decomposition in the many-body basis for the $H_2$ molecule dissociation in a minimal basis STO-3G. Right column : ground state energy and ground state decomposition in the many-body basis for the groundstate of the Fermi-Hubbard dimer as a function of $U/t$  (2 electrons on 2 sites). \label{fig:example}](figure.png)
+![$H_2$ molecule and Fermi-Hubbard dimer. Left column : ground state energy and ground state decomposition in the many-body basis for the $H_2$ molecule dissociation in a minimal basis STO-3G. Right column : ground state energy and ground state decomposition in the many-body basis for the Fermi-Hubbard dimer as a function of $U/t$  (2 electrons on 2 sites). \label{fig:example}](figure.png)
 
 The package QuantNBody is currently being used in a number of scientific projects dedicated to
 the developement of new methodologies to study strongly correlated systems in quantum chemistry and
@@ -75,7 +75,7 @@ condensed matter.
  
 # Acknowledgements
 
-Saad Yalouz acknowledges support from the Netherlands Organization for Scientific Research (NWO/OCW), and the Interdisciplinary Thematic Institute ITI-CSC
+Saad Yalouz acknowledges support the Interdisciplinary Thematic Institute ITI-CSC
 via the IdEx Unistra (ANR-10-IDEX-0002) within the program Investissement d’Avenir.
 
 # References
