@@ -66,11 +66,11 @@ or the Fermi-hubbard Hamiltonian from condensed matter theory
 + U \sum_{i}  a^\dagger_{i,\uparrow}a_{i,\uparrow} a^\dagger_{i,\downarrow} a_{i,\downarrow}
 \end{equation}
 
-where $a^\dagger_{i,\sigma}/a_{i,\sigma}$ the are the fermionic creation/annihilation operators (in the spinorbital $i$ with spin $\sigma$).
+where $a^\dagger_{i,\sigma}/a_{i,\sigma}$ are the fermionic creation/annihilation operators (in orbital $i$ with spin $\sigma$).
 
 The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters of directly obtained (very easily) from external chemistry python packages like PySCF [@sun2020recent] or Psi4 [@turney2012psi4]. As an illustration, we show in figure 1 a few results one can produce with the package with both types of hamiltonians.
  
-![$H_2$ molecule and Fermi-Hubbard dimer. Left column : ground state energy and ground state decomposition in the many-body basis for the $H_2$ molecule dissociation in a minimal basis STO-3G. Right column : ground state energy and ground state decomposition in the many-body basis for the Fermi-Hubbard dimer as a function of $U/t$  (2 electrons on 2 sites). \label{fig:example}](figure.png)
+![$H_2$ molecule and Fermi-Hubbard dimer. **Left column :** ground state energy and ground state decomposition in the many-body basis for the $H_2$ molecule dissociation in a minimal basis STO-3G. **Right column :** ground state energy and ground state decomposition in the many-body basis for the Fermi-Hubbard dimer as a function of $U$  (2 electrons on 2 sites and $t=1$). \label{fig:example}](figure.png)
 
 The package QuantNBody is currently being used in a number of scientific projects in the "Laboratoire de Chimie Quantique de Strasbourg".
 These projects dedicated to the developement of new methodologies to study strongly correlated systems in quantum chemistry and
