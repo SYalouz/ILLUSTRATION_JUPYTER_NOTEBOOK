@@ -72,8 +72,8 @@ The QuantNBody package manages on its own the building of all the one- and two-b
  
 ![$H_2$ molecule and Fermi-Hubbard dimer. **Left column :** ground state energy and ground state decomposition in the many-body basis for the $H_2$ molecule dissociation in a minimal basis STO-3G. **Right column :** ground state energy and ground state decomposition in the many-body basis for the Fermi-Hubbard dimer as a function of $U$  (2 electrons on 2 sites and $t=1$). \label{fig:example}](figure.png)
 
-The package QuantNBody is currently being used in a number of scientific projects in the "Laboratoire de Chimie Quantique de Strasbourg".
-These projects dedicated to the developement of new methodologies to study strongly correlated systems in quantum chemistry and
+The package QuantNBody is currently being used in a number of scientific projects realised in the "Laboratoire de Chimie Quantique de Strasbourg".
+These projects are dedicated to the developement of new methodologies to study strongly correlated systems in quantum chemistry and
 condensed matter.
  
  
