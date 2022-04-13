@@ -1,5 +1,5 @@
 ---
-title: 'QuantNBody:  a python package to manipulate many-body operators and wavefunctions in quantum chemistry and quantum physics.'
+title: 'QuantNBody:  a python package to manipulate many-body operators and wavefunctions in quantum chemistry/physics.'
 tags:
   - Python
   - quantum physics and chemistry
