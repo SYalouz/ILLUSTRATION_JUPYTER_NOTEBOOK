@@ -23,7 +23,7 @@ bibliography: paper.bib
 
 # Summary
 
-'QuantNBody' is a Python package providing numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native functions and is flexible enough to help users in building new types of many-body operators or objects. 
+'QuantNBody' is a Python package providing numerical tools for quantum chemists/physicists interested in the development of methodologies to study quantum many-body problems ranging from electronic structure to condensed matter. It provides a quick and easy way to build matrix representations of quantum many-operators (e.g. hamiltonians, spin operators) and get access to important quantities/objects (e.g. reduced density matrices, many-body wave functions). The code comes with various native functions and is flexible enough to help users in building new types of many-body operators or quantum states. 
 
 # Statement of need
   
@@ -45,28 +45,26 @@ planned to include bosonic systems).
 The framework of the 'QuantNBody' package stand on two fundamental steps. The first one is to create a reference
 many-body basis (based on a total number of quantum particles and modes/orbitals to fill) in which every operator
 can be represented. The second step consist in creating a general tool that can help building any (particle-number
-conserving) many-body operator : the general single-body hopping operator $a^\dagger a$. Once these two ingredients
-have been created, the user can provide the so-called general $a^\dagger a$ operator to already-built functions in
-order to generate quantum Hamiltonians of his/her choice. The user can also use this same general operator to build
-his/her own objects.
+conserving) many-body operator : the general single-body hopping operator $a^\dagger a$.  Once these two ingredients
+have been created, the user can use the already built function in order to (i) construct various type of many-body
+operators (e.g. Hamiltonians, Spin operators), (ii) manipulate quantum many-body states or create new ones.
 
 # A quick illustration
 
-A Few native many-body operators are already implemented in the QuantNBody package. The first one is the famous ab initio
+A Few native many-body operators Hamiltonian are already implemented in the QuantNBody package such as the ab initio
 electronic structure Hamiltonian from quantum chemistry
 \begin{equation} 
 \hat{H} = \sum_{p,q} h_{pq} \sum_\sigma^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
 + \sum_{p,q,r,s}  g_{pqrs} \sum_{\sigma,\tau}^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a^\dagger_{r,\tau} a_{s,\tau} a_{q,\sigma}  
 \end{equation}
 
-and the second one is the Fermi-hubbard Hamiltonian from condensed matter theory
+or the Fermi-hubbard Hamiltonian from condensed matter theory
 \begin{equation} 
 \hat{H} = \sum_{p,q} h_{pq} \sum_\sigma^{\uparrow,\downarrow} a^\dagger_{p,\sigma} a_{q,\sigma} 
 + \sum_{i} U \hat{n}_{i,\uparrow} \hat{n}_{i,\downarrow}
 \end{equation}
 
-The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters of directly obtained (very easily) from external chemistry python packages like PySCF or Psi4. Once these elements are provided to the QuantNBody package, one can (i) build the Hamiltonians entierly (or in an reduced active-space representation) and diagonalize them (ii) check the many-body decomposition of the resulting eigenstates $|\Psi_k\rangle$ which are solution of the Shcrodinger equation $\hat{H}|\Psi_k\rangle = E_k |\Psi_k\rangle$, (iii) Build spin operators $S^2$ (or $S_z$, $S_x$ and $S_y$) to check the spin properties of the resulting states.
-
-As an illustration, we show in figure several illustrative results one can produce with natives functions from the package. On the left, some properties of the groundstate of the $H_2$ molecule. On the right similar properties but for the groundstate of a 4 electrons on 4 sites Hubbard model. 
+The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters of directly obtained (very easily) from external chemistry python packages like PySCF or Psi4. As an illustration, we show in figure several illustrative results one can produce with the package.
  
+ ![Ground state properties of a $H_2$ molecule and a Fermi-Hubbard dimer. Left column : results obtained for a minimal basis STO-3G. On the right similar properties but for the groundstate of 2 electrons on 2 sites Fermi-Hubbard model. \label{fig:example}](figure.png)
 
