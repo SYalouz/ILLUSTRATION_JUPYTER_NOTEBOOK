@@ -42,12 +42,14 @@ The package framework is based on the creation of numerical matrix representatio
 in a given many-body basis with a special enphasis on fermionic system (note that extensions are
 planned to include bosonic systems).
 
-The framework of the 'QuantNBody' package stand on two fundamental steps. The first one is to create a reference
+The framework of the 'QuantNBody' package lies on two fundamental ingredients. The first one is the creation of a reference
 many-body basis (based on a total number of quantum particles and modes/orbitals to fill) in which every operator
-can be represented. The second step consist in creating a general tool that can help building any (particle-number
+can be represented. The second ingredient consists in creating a general tool that can help building any (particle-number
 conserving) many-body operator : the general single-body hopping operator $a^\dagger a$.  Once these two ingredients
-have been created, the user can use the already built function in order to (i) construct various type of many-body
-operators (e.g. Hamiltonians, Spin operators), (ii) manipulate quantum many-body states or create new ones.
+have been created, the user can call already built function in order to (i) construct various type of many-body
+operators (e.g. Hamiltonians, Spin operators), (ii) manipulate quantum many-body states or create new ones. Furthermore,
+the QuantNBody package has been designed to provide flexibility so that the user can also create his/her own operator and functions based 
+on the tools already implemented.
 
 # A quick illustration
 
