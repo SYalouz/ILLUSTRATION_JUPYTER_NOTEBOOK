@@ -64,7 +64,7 @@ or the Fermi-hubbard Hamiltonian from condensed matter theory
 + U \sum_{i}  a^\dagger_{i,\uparrow}a_{i,\uparrow} a^\dagger_{i,\downarrow} a_{i,\downarrow}
 \end{equation}
 
-where $a^\dagger_{i,\sigma}$ ($a_{i,\sigma}$) are the fermionic creation (annihilation) operators (in orbital $i$ with spin $\sigma$).
+where $a^\dagger_{i,\sigma}$ ($a_{i,\sigma}$) are the fermionic creation (annihilation) operators for orbital $i$ with spin $\sigma$.
 
 The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters of obtained from external chemistry python packages like PySCF [@sun2020recent] or Psi4 [@turney2012psi4]. As an illustration, we show in Fig. 1 a few results one can produce with the package for both hamiltonians.
  
