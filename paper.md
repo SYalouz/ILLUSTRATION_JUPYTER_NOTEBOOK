@@ -27,26 +27,26 @@ bibliography: paper.bib
 
 # Statement of need
   
-Encoding numerically a quantum many-body system is a crucial step to get access to exact properties 
+The numerical encoding of quantum many-body systems is crucial to get access to exact properties 
 of either ab initio or model systems in quantum chemistry and physics.
-In practice, it requires to develop a code that builds sparse matrix representations of quantum
+In practice, it requires to develop a code that can build sparse matrix representations of quantum
 operators (e.g. the Hamiltonian of a system) in a given quantum many-body basis.
 Usually this aspect is kept as ''blackbox'' in packages to spare the user with the cumbersome numerical parts.
-Whereas this type of package implementation suits perfectly for the realization of applications,  
-it turns out to be problematic for researchers who need numerical tools to develop and test new methodologies and theories. 
+In practice, this type of package implementation suits perfectly for the realization of applications. However, 
+it turns out to be problematic for researchers in need of numerical tools to develop and test new methodologies and theories. 
 
 The Python package 'QuantNBody' has been designed to help theoreticians who need an easy way to numerically create
-and manipulate objects linked to many-body systems. The package framework is based on the creation of numerical
+and manipulate objects linked to quantum many-body systems. The package framework is based on the creation of numerical
 matrix representation of quantum operators in a given many-body basis with a special emphasis on fermionic system
 (note that extensions are planned to include bosonic systems).  
 
-The framework of the 'QuantNBody' package lies on two fundamental ingredients. The first one is the creation of a reference
+The framework of the package lies on two fundamental ingredients. The first one is the creation of a reference
 many-body basis (based on a total number of quantum particles and modes/orbitals to fill) in which every operator
 can be represented. The second ingredient consists in creating a general tool that can help building any particle-number
 conserving many-body operator : the single-body hopping operator $a^\dagger a$.  Once these two ingredients
 have been created, the user can employ pre-built functions in order to (i) construct various type of many-body
 operators (e.g. hamiltonians, spin operators), (ii) manipulate/visualize quantum many-body states. Note that
-the QuantNBody package has been designed to provide flexibility to the user so that the he/she can also create his/her
+the QuantNBody package has been also designed to provide flexibility to the user so that the he/she can also create his/her
 own operators and functions based on the tools already implemented in the code.
 
 # A quick illustration
