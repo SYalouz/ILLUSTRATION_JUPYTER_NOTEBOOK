@@ -68,7 +68,7 @@ where $a^\dagger_{i,\sigma}$ ($a_{i,\sigma}$) are the fermionic creation (annihi
 
 The QuantNBody package manages on its own the building of all the one- and two-body fermionic operators via the already built object $a^\dagger a$ mentioned earlier. The one-/two-body integrals (i.e.  $h_{pq}$, $g_{pqrs}$  and $t$ and $U$ ) however have to be defined by the user. They can be pure parameters or obtained from external chemistry python packages like PySCF [@sun2020recent] or Psi4 [@turney2012psi4]. As an illustration, we show in Fig. 1 a few results one can produce with the package for both hamiltonians.
  
-![$H_2$ molecule and Fermi-Hubbard dimer. **Left column:** ground state energy and ground state decomposition in the many-body basis for the $H_2$ molecule dissociation in a minimal basis STO-3G. **Right column:** ground state energy and ground state decomposition in the many-body basis for the Fermi-Hubbard dimer as a function of $U/t$  (2 electrons on 2 sites). \label{fig:example}](figure.png)
+![$H_2$ molecule and Fermi-Hubbard dimer. **Left column:** ground state energy and ground state decomposition in the many-body basis for the $H_2$ molecule dissociation in a minimal basis (STO-3G) using integrals from Psi4 [@turney2012psi4]. **Right column:** ground state energy and ground state decomposition in the many-body basis for the Fermi-Hubbard dimer as a function of $U/t$  (2 electrons on 2 sites). \label{fig:example}](figure.png)
 
 The QuantNBody package is currently being used in several scientific projects realised in the "Laboratoire de Chimie Quantique de Strasbourg".
 These projects are dedicated to the development of new methodologies to study strongly correlated systems in quantum chemistry and
